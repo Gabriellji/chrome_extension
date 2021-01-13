@@ -6,6 +6,7 @@ export const Button = () => {
 
   const onClick = () => {
     setLove(!love);
+    chrome.runtime.sendMessage("Hello from the popup!");
   };
 
   return (
